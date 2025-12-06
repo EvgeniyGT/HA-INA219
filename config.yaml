@@ -1,0 +1,19 @@
+name: "INA219 Reader"
+version: "1.0.0"
+slug: "ina219_reader"
+description: "Simple INA219 reader that prints values to log"
+startup: services
+boot: auto
+arch:
+  - aarch64
+  - armv7
+host_network: true
+options: {}
+schema: {}
+privileged:
+  - SYS_ADMIN
+  - SYS_RAWIO
+devices:
+  - /dev/i2c-13
+  - /dev/i2c-14
+environment: {}
