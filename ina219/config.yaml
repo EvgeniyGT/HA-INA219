@@ -14,6 +14,5 @@ privileged:
   - SYS_ADMIN
   - SYS_RAWIO
 devices:
-  - /dev/i2c-13
-  - /dev/i2c-14
+  - /dev/i2c-1
 environment: {}
