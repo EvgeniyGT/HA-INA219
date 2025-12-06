@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 echo "Starting INA219 reader..."
 
 while true; do
