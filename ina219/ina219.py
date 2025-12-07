@@ -13,7 +13,7 @@ def read_word(bus, reg):
     data = bus.read_i2c_block_data(ADDRESS, reg, 2)
     return (data[0] << 8) | data[1]
 
-print("Will read data...")    
+print("[Will read data...]")
 try:
     with SMBus(I2C_BUS) as bus:
         bus_voltage_raw = read_word(bus, REG_BUS_VOLTAGE)
@@ -29,7 +29,8 @@ try:
 
 except Exception as e:
     print("Error:", e)
-print("Did read data...")    
+print("[Did read data...]")
+print("[END!]")
 
 #while True:
 #    try:
