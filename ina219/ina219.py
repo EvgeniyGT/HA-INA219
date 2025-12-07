@@ -1,5 +1,5 @@
 #from smbus2 import SMBus
-import time
+#import time
 #
 #I2C_BUS = 1
 #ADDRESS = 0x41
@@ -13,9 +13,9 @@ import time
 #    data = bus.read_i2c_block_data(ADDRESS, reg, 2)
 #    return (data[0] << 8) | data[1]
 
-while True:
-    try:
-        print("Hello!!!")
+#while True:
+#    try:
+#        print("Hello!!!")
 #        with SMBus(I2C_BUS) as bus:
 #            bus_voltage_raw = read_word(bus, REG_BUS_VOLTAGE)
 #            bus_voltage = (bus_voltage_raw >> 3) * 0.004
@@ -27,8 +27,10 @@ while True:
 #            print("Current RAW: {}".format(current_raw))
 #            print("Power RAW: {}".format(power_raw))
 #            print("-----")
+#
+#    except Exception as e:
+#        print("Error:", e)
+#
+#    time.sleep(2)
 
-    except Exception as e:
-        print("Error:", e)
-
-    time.sleep(2)
+print("Hello!!!")
