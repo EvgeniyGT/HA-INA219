@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Starting INA219 reader..."
+echo "Starting INA219 reader...."
 
 while true; do
     python3 /app/ina219.py
