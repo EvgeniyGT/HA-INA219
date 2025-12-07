@@ -190,7 +190,7 @@ class INA219:
         
 # if __name__=='__main__':
 #
-print("START")
+print("--------------------")
 
 # Create an INA219 instance.
 ina219 = INA219(addr=0x41)
