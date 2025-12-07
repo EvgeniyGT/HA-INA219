@@ -1,5 +1,5 @@
 #from smbus2 import SMBus
-#import time
+import time
 #
 #I2C_BUS = 1
 #ADDRESS = 0x41
